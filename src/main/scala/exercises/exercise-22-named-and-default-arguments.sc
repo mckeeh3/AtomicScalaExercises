@@ -33,7 +33,7 @@ t2.minutes is 0
 //    p.hasMoon is false
 
 class Planet(val name: String, val description: String, val moons: Int = 0) {
-  def hasMoon(): Boolean = {
+  def hasMoon: Boolean = {
     moons > 0
   }
 }
