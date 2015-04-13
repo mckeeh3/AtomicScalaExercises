@@ -13,6 +13,7 @@ class SimpleTime(val hours: Int, val minutes: Int) {}
 val t = new SimpleTime(hours=5, minutes=30)
 t.hours is 5
 t.minutes is 30
+
 // 2. Using the solution for SimpleTime above, default minutes to 0 so
 //    you don’t have to specify them. Satisfy the following tests:
 //    val t2 = new SimpleTime2(hours=10)
@@ -23,6 +24,7 @@ class SimpleTime2(val hours: Int = 0, val minutes: Int = 0) {}
 val t2 = new SimpleTime2(hours=10)
 t2.hours is 10
 t2.minutes is 0
+
 // 3. Create a class Planet that has, by default, a single moon. The
 //    Planet class should have a name (String) and description (String).
 //    Use named arguments to specify the name and description, and a
@@ -42,6 +44,7 @@ val p = new Planet(name = "Mercury",
   description = "small and hot planet",
   moons = 0)
 p.hasMoon is false
+
 // 4. Modify your solution for the previous exercise by changing the
 //    order of the arguments that you use to create the Planet. Did you
 //    have to change any code? Satisfy the following test:

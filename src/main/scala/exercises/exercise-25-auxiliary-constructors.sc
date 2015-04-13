@@ -52,7 +52,8 @@ class ClothesWasher4(val model: String, val capacity: Double) {
   def this(model: String) {
     this(model, 10)
   }
-  def this(capacity: Double){
+
+  def this(capacity: Double) {
     // println(capacity) // causes compile error
     this(model = "", capacity = capacity)
   }
