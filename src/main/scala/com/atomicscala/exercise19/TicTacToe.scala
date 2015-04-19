@@ -10,6 +10,8 @@ class Cell {
     } else
       "invalid move"
   }
+
+  override def toString = if (entry == ' ') "-" else entry.toString
 }
 
 class Grid {
