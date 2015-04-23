@@ -1,7 +1,7 @@
 
 import com.atomicscala.AtomicTest._
 
-//1.  Add “Purple” to Color’s object. Don’t add to the match expression.
+// 1. Add “Purple” to Color’s object. Don’t add to the match expression.
 //    What happens?
 
 sealed trait Color
