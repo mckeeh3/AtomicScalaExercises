@@ -1,8 +1,5 @@
 
-import java.util
-
 import com.atomicscala.AtomicTest._
-import exercise57.Syrup
 import exercise57.Syrup._
 
 // 1. Rewrite Coffee.scala from Constructors using traits. Satisfy the
