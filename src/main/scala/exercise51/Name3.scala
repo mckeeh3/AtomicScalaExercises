@@ -1,6 +1,6 @@
-package com.atomicscala.exercise51
+package exercise51
 
-import reflect.runtime.currentMirror
+import scala.reflect.runtime.currentMirror
 
 object Name3 {
   def className(o: Any) = currentMirror.reflect(o).symbol.toString

@@ -1,4 +1,4 @@
-package com.atomicscala.exercise19
+package exercise19
 
 class SomeBody {
   val name = "Janet Doe"

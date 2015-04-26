@@ -1,5 +1,5 @@
 
-package com.atomicscala.exercise50
+package exercise50
 
 trait BatteryPower3 {
   def monitor(charge: Double) = {

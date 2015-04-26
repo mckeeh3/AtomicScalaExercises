@@ -1,5 +1,6 @@
 
-package com.atomicscala.exercise50
+package exercise50
+
 import com.atomicscala.AtomicTest._
 
 trait BatteryPower2 {

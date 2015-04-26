@@ -1,4 +1,4 @@
-package com.atomicscala.pythagorean
+package exercise13
 
 class EquilateralTriangle {
   def area(side: Double): Double = {

@@ -6,7 +6,7 @@
 //    Remember to update the package import to use your new class.
 //    Ensure that the tests run properly.
 
-import com.atomicscala.pythagorean.RightTriangle
+import exercise13._
 
 val rt = new RightTriangle
 println(rt.hypotenuse(3,4))
@@ -17,8 +17,6 @@ assert(rt.area(3,4) == 6)
 //    1. Create a method area with an argument side (as a Double); look
 //    up the formula in Wikipedia. Display a test result and use assert to
 //    verify it.
-
-import com.atomicscala.pythagorean.EquilateralTriangle
 
 val elt = new EquilateralTriangle
 val area = elt.area(5)
@@ -37,8 +35,6 @@ val rightTriangle = new RightTriangle
 //    define the classes, don’t give them bodies). Use the techniques in
 //    this atom to import one class, two classes, and all classes, and
 //    show that you’ve successfully imported them in each case.
-
-import com.atomicscala.exercise13.{ Hippo, Lion, Monkey}
 
 val hippo = new Hippo
 val lion = new Lion

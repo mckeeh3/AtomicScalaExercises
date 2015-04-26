@@ -1,5 +1,5 @@
 
-package com.atomicscala.exercise50
+package exercise50
 
 object WhenAmI extends App {
   hi

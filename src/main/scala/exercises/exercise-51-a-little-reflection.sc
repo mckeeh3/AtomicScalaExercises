@@ -1,5 +1,6 @@
 
 import com.atomicscala.AtomicTest._
+import exercise51.{Name3, Name}
 
 // 1. Call println on an instance of a case class. Now combine the case
 //    class with Name and notice the difference. Remember to compile
@@ -8,8 +9,6 @@ import com.atomicscala.AtomicTest._
 case class Person(firstName: String, lastName: String)
 
 Person("Douglas", "Adams") is "Person(Douglas,Adams)"
-
-import com.atomicscala.exercise51.Name
 
 case class PersonName(firstName: String, lastName: String) extends Name
 
@@ -21,8 +20,6 @@ PersonName("Arthur", "Dent") is "PersonName"
 class Person2(firstName: String, lastName: String)
 
 println(new Person2("Douglas", "Adams"))
-
-import com.atomicscala.exercise51.Name
 
 class PersonName2(firstName: String, lastName: String) extends Name
 
@@ -36,8 +33,6 @@ new PersonName2("Arthur", "Dent") is "PersonName2"
 class Person3(firstName: String, lastName: String)
 
 println(new Person3("Douglas", "Adams"))
-
-import com.atomicscala.exercise51.Name3
 
 class PersonName3(firstName: String, lastName: String) extends Name3
 

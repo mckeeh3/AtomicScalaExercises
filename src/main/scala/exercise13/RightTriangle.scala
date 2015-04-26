@@ -1,5 +1,5 @@
 // PythagoreanTheorem.scala
-package com.atomicscala.pythagorean
+package exercise13
 
 class RightTriangle {
   def hypotenuse(a: Double, b: Double): Double = {

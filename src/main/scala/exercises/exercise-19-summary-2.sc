@@ -1,5 +1,6 @@
 
 import com.atomicscala.AtomicTest._
+import exercise19._
 
 // 1. Create a Vector filled with Chars, one filled with Ints, and one
 //    filled with Strings. Sort each Vector and produce the min and max
@@ -67,8 +68,6 @@ val vMixed = Vector('c', 1, "one", 1.0)
 //    Put the class in a package and compile it. Import the resulting
 //    library into a script and test it.
 
-import com.atomicscala.exercise19.BasicMethods
-
 val basicMethods = new BasicMethods
 basicMethods.bang("Hello, World") is "Hello, World!"
 basicMethods.cube(3) is 27
@@ -78,7 +77,7 @@ basicMethods.cube(3) is 27
 //    classes by adding methods that produce results that can be tested
 //    with AtomicTest.
 
-import com.atomicscala.exercise19.{NoBody, SomeBody, EveryBody}
+import com.atomicscala.exercise19.SomeBody
 
 val noBody = new NoBody
 val someBody = new SomeBody
@@ -91,8 +90,6 @@ everyBody.body() is "Janet Doe Janet Doe Janet Doe "
 // 6. Add Kelvin temperature units to Temperature.scala (Kelvin is
 //    Celsius + 273.15). When writing the new code, call the existing
 //    methods whenever possible.
-
-import com.atomicscala.exercise19.Temperature
 
 val temp = new Temperature
 temp.setFahrenheit(212)
@@ -110,8 +107,6 @@ temp.getFahrenheit is -459.66999999999996
 // 7. Add a method to TicTacToe.scala that displays the game board
 //    (hint: use a for loop within a for loop). Call this method
 //    automatically for each move.
-
-import com.atomicscala.exercise19.Grid
 
 var grid = new Grid
 grid.play('X', 1, 1) is "successful move"

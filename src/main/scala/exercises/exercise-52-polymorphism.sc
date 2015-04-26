@@ -1,6 +1,6 @@
 
 import com.atomicscala.AtomicTest._
-import com.atomicscala.exercise51.Name
+import exercise51.Name
 
 // 1. Write code that verifies the animals/vehicles description in the
 //    second paragraph of this atom.
