@@ -105,6 +105,7 @@ new CallF(new WithF {
 
 def callF[T <: WithF](t: T, n: Int) = t.f(n)
 callF(new WithF, 3) is 33
+
 // 3. Would it ever make sense to have a type parameter that specifies
 //    an exact type rather than a bounded type? Write code to explore
 //    the possibilities and see if you can determine the differences.
