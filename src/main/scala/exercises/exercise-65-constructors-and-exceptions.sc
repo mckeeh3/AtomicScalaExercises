@@ -24,7 +24,7 @@ for (line <- CodeListing.apply(filename)) {
 //    make additional modifications?
 
 def dumpFile(lines: IndexedSeq[String], lineNumber: Int): Unit = {
-  if (! lines.isEmpty) {
+  if (lines.nonEmpty) {
     println(s"${lineNumber + 1} ${lines.head}")
     dumpFile(lines.tail, lineNumber + 1)
   }
