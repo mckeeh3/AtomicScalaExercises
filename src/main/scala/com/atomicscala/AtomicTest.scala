@@ -18,9 +18,9 @@ class AtomicTest[T](val target: T) {
     if (!test) {
       val msg = "[Error] expected:\n" + expected
       println(msg)
-      val el = new FileWriter(errorLog, true)
-      el.write(target + msg + "\n")
-      el.close()
+//      val el = new FileWriter(errorLog, true)
+//      el.write(target + msg + "\n")
+//      el.close()
     }
   }
 
