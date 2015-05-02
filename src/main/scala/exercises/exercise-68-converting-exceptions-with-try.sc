@@ -1,5 +1,5 @@
 
-import java.io.FileNotFoundException
+import java.io.{File, FileNotFoundException}
 
 import com.atomicscala.AtomicTest._
 import exercise65.{CodeListing, ExtensionException}
@@ -49,7 +49,6 @@ f2(3).get is "1.618"
 //    Constructors and Exceptions?
 
 def listing(name: String) = {
-  println(name)
   Try(new CodeListing(name)).recover {
     case _: FileNotFoundException =>
       Vector(s"File Not Found: $name")
@@ -59,4 +58,19 @@ def listing(name: String) = {
       Vector(e.getMessage)
   }.get}
 
+def listingNumbered(filename: String) = {
+  var lineNumber = 0
+  def numberLine(line: String) = {
+    lineNumber += 1
+    s"$lineNumber $line"
+  }
+  listing(filename).map(line => numberLine(line))
+}
+
 new CodeListingTester(listing)
+
+val filePath = "exercise68/CodeListingTester.scala"
+val filename = new File(getClass.getClassLoader.getResource(filePath).toURI).getPath
+
+val lines = listingNumbered(filename)
+lines(1) is "2 package exercise68"
