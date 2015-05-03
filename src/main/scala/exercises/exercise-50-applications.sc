@@ -1,5 +1,5 @@
 
-// 1. Use the code fromCompiled.scala. Compile it usingscalac, as
+// 1. Use the code fromCompiled.scala. Compile it using scalac, as
 //    described above. Run it with the shell command scala WhenAmI.
 
 // See Compiled.scala in package exercise50
